@@ -27,7 +27,7 @@
       <td>{{ product.stock }}</td>
       <td>
         <img
-            :src="'http://localhost/project_67707925s/php_api/img/' + product.image"
+            :src="'http://localhost:8081/project_67707925s/php_api/img/' + product.image"
             width="100"
             height="150"
             class="card-img-top"
@@ -62,7 +62,7 @@ export default {
     // ฟังก์ชันดึงข้อมูลจาก API ด้วย GET
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost/project_67707925s/php_api/show_product.php", {
+        const response = await fetch("http://localhost:8081/project_67707925s/php_api/show_product.php", {
           method: "GET",
           headers: {
             "Content-Type": "application/json"

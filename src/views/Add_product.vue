@@ -60,7 +60,7 @@ export default {
         formData.append("stock", this.product.stock);
         formData.append("image", this.product.image);
 
-        const res = await fetch("http://localhost/project_67707925s/php_api/add_product.php", {
+        const res = await fetch("http://localhost:8081/project_67707925s/php_api/add_product.php", {
           method: "POST",
           body: formData, // ❌ ห้ามใส่ Content-Type เดี๋ยว browser จะจัดการเอง
         });
